@@ -1,0 +1,130 @@
+.myProjects{
+    /* background: white; */
+    color: white;
+    padding: 20px 20px;
+}
+
+.project-container{
+    min-height: 385px;
+    position: relative;
+    perspective: 500px;
+}
+
+.project-card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.project{
+    margin: 10px 0px;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    padding: 10px;
+    background-color: #cf20ff29;
+    color: white;
+    transition: 0.5s 0s all linear;
+    position: absolute;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.project-card{
+    transform-style: preserve-3d;
+    transition: 0.5s all linear;
+}
+
+.project-back{
+    transform: rotateY(180deg);
+    padding: 70px 30px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+
+.project h1{
+    font-size: 30px;
+    color: red;
+}
+
+.project img{
+    height: 150px;
+    width: 150px;
+}
+
+.skills{
+    display: flex;
+    /* flex-direction: column; */
+    width: fit-content;
+    align-items: baseline;
+}
+
+.overview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-github:hover {
+    filter: invert(0);
+}
+
+.skills button{
+    position: relative;
+    color: lawngreen;
+    border: 1px solid lawngreen;
+    background-color: transparent;
+}
+
+.skills button::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: lawngreen;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.skills button:hover:before{
+    width: 100%;
+}
+
+.skills button:hover{
+    border: 1px solid lawngreen;
+    
+}
+
+.flip-button{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+@keyframes flipIn {
+    0%{
+    transform: rotateY(0deg);
+   } 
+   100%{
+    transform: rotateY(180deg);
+   } 
+}
+
+@keyframes flipOut {
+    0%{
+    transform: rotateY(180deg);
+   } 
+   100%{
+    transform: rotateY(0deg);
+   } 
+}

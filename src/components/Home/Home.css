@@ -1,0 +1,80 @@
+.myHome {
+    padding: 50px 0px;
+}
+
+.myHomeBanner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 10px 50px; */
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.myHomeBanner div img {
+    width: 100%;
+    margin: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.myHomeBanner>div {
+    width: 30%;
+    margin: 25px 0px;
+    /* background-color: red; */
+}
+
+.myHomeBanner div>div:nth-child(1) {
+    display: flex;
+}
+
+.objective {
+    white-space: break-spaces;
+    font-size: 20px;
+}
+
+.social-media {
+    /* background: linear-gradient(150deg, #ffa9a9, #5e4d4d); */
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.social-media a {
+    padding: 0px 10px;
+}
+
+.social-media a:nth-child(1):hover {
+    color: #0072b1;
+}
+
+.fa-github:hover {
+    filter: invert(1);
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:1000px) {
+    .myHomeBanner>div {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:715px) {
+    .myHomeBanner {
+        flex-direction: column-reverse;
+    }
+
+    .myHomeBanner>div {
+        width: 70%;
+    }
+}
