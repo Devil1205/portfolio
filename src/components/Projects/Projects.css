@@ -5,7 +5,7 @@
 }
 
 .project-container{
-    min-height: 385px;
+    min-height: 420px;
     position: relative;
     perspective: 500px;
 }
@@ -59,6 +59,7 @@
     /* flex-direction: column; */
     width: fit-content;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .overview{

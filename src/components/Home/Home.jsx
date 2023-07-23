@@ -31,7 +31,7 @@ function Home({scrollToElement}) {
                         <button className="btn myBtn" onClick={()=>{scrollToElement('.myProjects')}}>Projects</button>
                     </div>
                 </div>
-                <div>
+                <div className='imageSet'>
                     <img src={keepNotes} alt="" />
                     <div className="social-media">
                         <a href="/">

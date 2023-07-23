@@ -29,7 +29,7 @@ function ProjectItem(props) {
                     <div className="skills my-3">
                         {props.skills !== undefined && props.skills.map((element, index) => {
                             return (
-                                <button className='btn me-2' key={index}>{element}</button>
+                                <button className='btn me-2 mb-4' key={index}>{element}</button>
                             )
                         })}
                     </div>

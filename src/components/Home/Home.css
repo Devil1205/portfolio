@@ -1,5 +1,8 @@
 .myHome {
     padding: 50px 0px;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
 }
 
 .myHomeBanner {
@@ -11,13 +14,27 @@
     white-space: nowrap;
 }
 
-.myHomeBanner div img {
+.imageSet img {
     width: 100%;
     margin: auto;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 60px;
+    transform: rotate(10deg);
+    transition: 0.5s all;
 }
+
+.imageSet {
+    background-color: #0d0e2e;
+    border-radius: 60px;
+    position: relative;
+    box-shadow: 0px 0px 8px 0px white;
+}
+
+.imageSet:hover>img {
+    transform: rotate(0deg);
+}
+
 
 .myHomeBanner>div {
     width: 30%;
@@ -42,6 +59,8 @@
     width: 100%;
     margin: 10px auto;
     text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 
 .social-media a {

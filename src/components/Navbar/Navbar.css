@@ -2,35 +2,38 @@
 
 .myNavbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 1.5rem;
     overflow: hidden;
-    background-color: #190446;
-    height: 80px;
-    /* position: sticky;
-    top: 0px;
-    z-index: 10; */
+    background-color: #5656565e;
+    height: 60px;
+    backdrop-filter: blur(10px);
+    width: 400px;
+    position: fixed;
+    bottom: 0;
+    left: calc(50vw - 200px);
+    z-index: 10;
+    border-radius: 50px;
 }
 
-.myNavbar h1{
-    padding: 10px;
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin: 0;
-}
-
-.myNavbar div{
-    display: flex;
-    justify-content: center;
-}
-
-.myNavbar div div{
+.myNavbar div {
     padding: 10px 20px;
     cursor: pointer;
 }
 
 .myNavbar div div:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width:530px) {
+    .myNavbar{
+        width: 280px;
+        left: calc(50vw - 140px);
+    }
+
+    .myNavbar div {
+        padding: 10px 15px;
+    }
 }
