@@ -72,36 +72,6 @@
     filter: invert(0);
 }
 
-.skills button{
-    position: relative;
-    color: lawngreen;
-    border: 1px solid lawngreen;
-    background-color: transparent;
-}
-
-.skills button::before{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background-color: lawngreen;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    transition: 0.5s all;
-    z-index: -1;
-    border-radius: 5px;
-}
-
-.skills button:hover:before{
-    width: 100%;
-}
-
-.skills button:hover{
-    border: 1px solid lawngreen;
-    
-}
-
 .flip-button{
     display: flex;
     justify-content: flex-end;

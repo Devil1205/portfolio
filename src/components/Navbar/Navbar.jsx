@@ -11,9 +11,9 @@ function Navbar({scrollToElement}) {
     <div className='myNavbar'>
           <div onClick={()=>{scrollToElement('.myHome')}}><HomeOutlinedIcon fontSize='medium' /></div>
           <div onClick={()=>{scrollToElement('.myAbout')}}><PersonOutlineOutlinedIcon fontSize='medium' /></div>
-          <div><SchoolOutlinedIcon fontSize='medium' /></div>
           <div onClick={()=>{scrollToElement('.myProjects')}}><FolderSpecialOutlinedIcon fontSize='medium' /></div>
-          <div><ChatOutlinedIcon fontSize='medium' /></div>
+          <div onClick={()=>{scrollToElement('.mySkills')}}><SchoolOutlinedIcon fontSize='medium' /></div>
+          <div onClick={()=>{scrollToElement('.myContact')}}><ChatOutlinedIcon fontSize='medium' /></div>
     </div>
   )
 }

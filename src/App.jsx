@@ -8,6 +8,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Skills from "./components/Skills/Skills"
+import Contact from "./components/Contact/Contact"
 
 function App() {
 
@@ -20,7 +22,7 @@ function App() {
     <Router>
       <Navbar scrollToElement={scrollToElement} />
       <Routes>
-        <Route exact path="/" element={<><Home scrollToElement={scrollToElement}/><About scrollToElement={scrollToElement}/><Projects scrollToElement={scrollToElement}/></>}/>
+        <Route exact path="/" element={<><Home scrollToElement={scrollToElement}/><About scrollToElement={scrollToElement}/><Projects scrollToElement={scrollToElement}/> <Skills scrollToElement={scrollToElement}/> <Contact/> </>}/>
       </Routes>
     </Router>
   )

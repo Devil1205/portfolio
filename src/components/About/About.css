@@ -26,7 +26,7 @@
     justify-content: space-evenly;
 }
 
-.experience div{
+.experience > div{
     height: 300px;
     width: 50%;
     margin: 10px;
@@ -39,13 +39,13 @@
     border-radius: 10px;
 }
 
-.experience div span{
+.experience > div span{
     font-size: 30px;
     font-weight: 500;
     margin-top: 10px;
 }
 
-.experience div span:nth-child(3){
+.experience > div span:nth-child(3){
     font-size: 20px;
 }
 
@@ -53,7 +53,7 @@
     .experience{
         flex-direction: column;
     }
-    .experience div{
+    .experience > div{
         width: 90%;
         margin: 10px auto;
     }

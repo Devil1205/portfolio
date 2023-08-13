@@ -25,3 +25,34 @@ a,ul {
     /* color: #e226e2; */
     background: #e226e2
 }
+
+.animatedBtn{
+    position: relative;
+    color: #e226e2;
+    border: 1px solid #e226e2;
+    background-color: transparent;
+    z-index: 5;
+}
+
+.animatedBtn::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #e226e2;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.animatedBtn:hover:before{
+    width: 100%;
+}
+
+.animatedBtn:hover{
+    border: 1px solid #e226e2;
+    
+}
