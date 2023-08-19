@@ -14,7 +14,6 @@ import Contact from "./components/Contact/Contact"
 function App() {
 
   const scrollToElement = (element) => {
-    console.log(element);
     document.querySelector(element).scrollIntoView();
   }
 

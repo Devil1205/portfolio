@@ -23,16 +23,16 @@ function Contact() {
                             required
                             variant="outlined"
                             type='text'
-                            id="outlined"
-                            label="Name"
+                            id="name"
+                            label="Your Name"
                             fullWidth
                             sx={{ maxWidth: "400px", margin: "15px 0px" }}
                         />
                         <TextField
                             variant="outlined"
                             type='email'
-                            id="outlined"
-                            label="Email"
+                            id="email"
+                            label="Your Email"
                             fullWidth
                             required
                             sx={{ maxWidth: "400px", margin: "15px 0px" }}
@@ -41,8 +41,8 @@ function Contact() {
                             required
                             variant="outlined"
                             type='text'
-                            id="outlined"
-                            label="Message"
+                            id="message"
+                            label="Your Message"
                             fullWidth
                             sx={{ maxWidth: "400px", margin: "15px 0px" }}
 
