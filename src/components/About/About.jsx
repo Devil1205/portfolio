@@ -20,7 +20,7 @@ function About() {
                     </div>
             </div>
             <div className="about-desc">
-                I am Pulkit Sachdeva currently pursuing B.Tech in Information Technology from Dr. Akhilesh Das Gupta Institute of Technology & Management. I am a programmar and Web Developer, have successfully completed various projects using ReactJS, JavaScript, Bootstrap etc. I am an enthusiastic and self motivated person who loves to explore new opportunities in technology.
+                I am Pulkit Sachdeva currently pursuing final year of B.Tech in Information Technology from Dr. Akhilesh Das Gupta Institute of Technology & Management. I am passionate about software development, particularly in the MERN stack, skilled in creating innovative web applications through self-driven projects and coursework. I possess a solid understanding of MongoDB, Express.js, React.js, and Node.js, with a keen interest in learning and adopting new technologies. Eager to leverage academic knowledge and personal projects to contribute effectively to dynamic development teams and pursue a successful career in software engineering.
             </div>
         </div>
         </div >

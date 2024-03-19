@@ -12,16 +12,17 @@ function Skills({ scrollToElement }) {
                     <div>
                         <span>Hard Skills</span>
                         <div className="skills">
-                            <button className='animatedBtn btn'>C++</button>
-                            <button className='animatedBtn btn'>Java</button>
-                            <button className='animatedBtn btn'>ReactJS</button>
-                            <button className='animatedBtn btn'>JavaScript</button>
                             <button className='animatedBtn btn'>NodeJS</button>
                             <button className='animatedBtn btn'>ExpressJS</button>
+                            <button className='animatedBtn btn'>ReactJS</button>
                             <button className='animatedBtn btn'>MongoDB</button>
-                            <button className='animatedBtn btn'>Bootstrap</button>
-                            <button className='animatedBtn btn'>CSS</button>
-                            <button className='animatedBtn btn'>HTML</button>
+                            <button className='animatedBtn btn'>Redux</button>
+                            <button className='animatedBtn btn'>Stripe</button>
+                            <button className='animatedBtn btn'>Socket.io</button>
+                            <button className='animatedBtn btn'>CSS3</button>
+                            <button className='animatedBtn btn'>HTML5</button>
+                            <button className='animatedBtn btn'>JavaScript</button>
+                            <button className='animatedBtn btn'>C++</button>
                         </div>
                     </div>
                     <div>

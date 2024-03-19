@@ -16,11 +16,11 @@ function ProjectItem(props) {
         <div className="project-container">
             <div className="project-card">
                 <div className='project project-front'>
-                    <img src={props.image} alt="" />
+                    <a href={props.live} target='_blank' rel='noreferrer'><img src={props.image} alt="" /></a>
                     <div className='overview mt-5'>
-                        <h1>{props.title}</h1>
+                        <a href={props.live} target='_blank' rel='noreferrer'><h1>{props.title}</h1></a>
                         <div>
-                            <a href={props.link} target='_blank' rel='noreferrer'>
+                            <a href={props.code} target='_blank' rel='noreferrer'>
                                 <MDBIcon fab icon="github" size="2x" />
                             </a>
                         </div>

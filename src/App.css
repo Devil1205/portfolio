@@ -52,7 +52,10 @@ a,ul {
     width: 100%;
 }
 
+.animatedBtn:active{
+    border: 1px solid #e226e2!important;
+    }
+
 .animatedBtn:hover{
     border: 1px solid #e226e2;
-    
 }

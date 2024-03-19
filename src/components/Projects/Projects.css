@@ -1,28 +1,27 @@
-.myProjects{
+.myProjects {
     /* background: white; */
     color: white;
     padding: 20px 20px;
 }
 
-.project-container{
-    min-height: 420px;
+.project-container {
+    min-height: 570px;
     position: relative;
     perspective: 500px;
 }
 
-.project-card{
+.project-card {
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
-.project{
+.project {
     margin: 10px 0px;
     text-align: center;
     width: 100%;
     border-radius: 5px;
-    height: 100%;
-    padding: 10px;
+    padding: 20px;
     background-color: #cf20ff29;
     color: white;
     transition: 0.5s 0s all linear;
@@ -31,31 +30,37 @@
     backface-visibility: hidden;
 }
 
-.project-card{
+.project-card {
     transform-style: preserve-3d;
     transition: 0.5s all linear;
 }
 
-.project-back{
+.project-back {
     transform: rotateY(180deg);
-    padding: 70px 30px;
+    padding: 40px 30px;
     font-size: 25px;
     text-align: justify;
     overflow-y: auto;
 }
 
 
-.project h1{
+.project h1 {
     font-size: 30px;
-    color: red;
+    color: #4681ff;
 }
 
-.project img{
+.project h1:hover {
+    text-decoration: underline;
+}
+
+.project img {
     height: 150px;
     width: 150px;
+    border-radius: 100%;
+    object-fit: cover;
 }
 
-.skills{
+.skills {
     display: flex;
     /* flex-direction: column; */
     width: fit-content;
@@ -63,11 +68,11 @@
     flex-wrap: wrap;
 }
 
-.project .skills{
+.project .skills {
     justify-content: flex-start;
 }
 
-.overview{
+.overview {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +82,7 @@
     filter: invert(0);
 }
 
-.flip-button{
+.flip-button {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -88,19 +93,21 @@
 
 
 @keyframes flipIn {
-    0%{
-    transform: rotateY(0deg);
-   } 
-   100%{
-    transform: rotateY(180deg);
-   } 
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
 }
 
 @keyframes flipOut {
-    0%{
-    transform: rotateY(180deg);
-   } 
-   100%{
-    transform: rotateY(0deg);
-   } 
+    0% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
 }
