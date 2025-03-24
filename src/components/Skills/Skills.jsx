@@ -1,43 +1,76 @@
-import React from 'react';
-import './Skills.css';
-import skillsBg from '../../images/skillsBg.png';
+import React from "react";
+import "./Skills.css";
 
-function Skills({ scrollToElement }) {
-    return (
-        <div className="mySkills">
-            {/* <img className='skills-bg' src={skillsBg} alt="" /> */}
-            <h1 className='text-center'>My <span className='purple'>Skills</span></h1>
-            <div className="skill-container">
-                <div className="experience">
-                    <div>
-                        <span>Hard Skills</span>
-                        <div className="skills">
-                            <button className='animatedBtn btn'>NodeJS</button>
-                            <button className='animatedBtn btn'>ExpressJS</button>
-                            <button className='animatedBtn btn'>ReactJS</button>
-                            <button className='animatedBtn btn'>MongoDB</button>
-                            <button className='animatedBtn btn'>Redux</button>
-                            <button className='animatedBtn btn'>Stripe</button>
-                            <button className='animatedBtn btn'>Socket.io</button>
-                            <button className='animatedBtn btn'>CSS3</button>
-                            <button className='animatedBtn btn'>HTML5</button>
-                            <button className='animatedBtn btn'>JavaScript</button>
-                            <button className='animatedBtn btn'>C++</button>
-                        </div>
-                    </div>
-                    <div>
-                        <span>Soft Skills</span>
-                        <div className="skills">
-                            <button className='animatedBtn btn'>Communication</button>
-                            <button className='animatedBtn btn'>Team Working</button>
-                            <button className='animatedBtn btn'>Leadership</button>
-                            <button className='animatedBtn btn'>Problem Solving</button>
-                        </div>
-                    </div>
-                </div>
+function Skills() {
+  return (
+    <div className="mySkills">
+      {/* <img className='skills-bg' src={skillsBg} alt="" /> */}
+      <h1 className="text-center">
+        My <span className="purple">Skills</span>
+      </h1>
+      <div className="skill-container">
+        <div className="skills-grid-container">
+          <div>
+            <h2 className="text-center">
+              <span className="purple">&lt;</span> Frontend Development <span className="purple">/&gt;</span>
+            </h2>
+            <div className="skills">
+              <button className="animatedBtn-light btn">Next.js</button>
+              <button className="animatedBtn-light btn">ReactJS</button>
+              <button className="animatedBtn-light btn">TailwindCSS</button>
+              <button className="animatedBtn-light btn">Redux</button>
+              <button className="animatedBtn-light btn">JavaScript</button>
+              <button className="animatedBtn-light btn">CSS3</button>
+              <button className="animatedBtn-light btn">HTML5</button>
             </div>
+          </div>
+
+          <div>
+            <h2 className="text-center">
+              <span className="purple">{`{ `}</span> Backend Development <span className="purple">{` }`}</span>
+            </h2>
+            <div className="skills">
+              <button className="animatedBtn-light btn">NodeJS</button>
+              <button className="animatedBtn-light btn">ExpressJS</button>
+              <button className="animatedBtn-light btn">MongoDB</button>
+              <button className="animatedBtn-light btn">PostgreSQL</button>
+              <button className="animatedBtn-light btn">RESTful APIs</button>
+              <button className="animatedBtn-light btn">Socket.io</button>
+              <button className="animatedBtn-light btn">JWT</button>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-center">
+              <span className="purple">[</span> Tools & Technologies <span className="purple">]</span>
+            </h2>
+            <div className="skills">
+              <button className="animatedBtn-light btn">Git</button>
+              <button className="animatedBtn-light btn">Postman</button>
+              <button className="animatedBtn-light btn">npm</button>
+              <button className="animatedBtn-light btn">Stripe</button>
+              <button className="animatedBtn-light btn">Swagger</button>
+              <button className="animatedBtn-light btn">react-i18next</button>
+              <button className="animatedBtn-light btn">C++</button>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-center">
+              <span className="purple">✧</span> Soft Skills <span className="purple">✧</span>
+            </h2>
+            <div className="skills">
+              <button className="animatedBtn-light btn">Problem Solving</button>
+              <button className="animatedBtn-light btn">Communication</button>
+              <button className="animatedBtn-light btn">Team Leadership</button>
+              <button className="animatedBtn-light btn">Time Management</button>
+              <button className="animatedBtn-light btn">Agile/Scrum</button>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Skills
+export default Skills;

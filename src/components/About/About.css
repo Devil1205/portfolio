@@ -6,7 +6,7 @@
 
 .about-desc{
     color: grey;
-    max-width: 500px;
+    max-width: 800px;
     font-size: 20px;
     font-weight: 500;
     width: 90%;
@@ -37,12 +37,12 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .experience > div span{
     font-size: 30px;
     font-weight: 500;
-    margin-top: 10px;
 }
 
 .experience > div span:nth-child(3){
@@ -56,5 +56,6 @@
     .experience > div{
         width: 90%;
         margin: 10px auto;
+        padding: 20px;
     }
 }
