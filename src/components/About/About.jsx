@@ -33,7 +33,7 @@ function About() {
             />
             <span>Projects</span>
             <span className="text-secondary">
-              4 - Full Stack Projects <br />3 - Frontend Projects
+              4 - Professional Projects <br />9 - Personal Projects
             </span>
           </div>
         </div>

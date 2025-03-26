@@ -15,57 +15,64 @@ function ProjectItem(props) {
       <div className="project-card">
         <div className="project project-front">
           <div className="category-badge">{props.category}</div>
-          <a href={props.live} target="_blank" rel="noreferrer">
+          <a href={props.live || props.code} target="_blank" rel="noreferrer">
             <div className="image-container">
               <img src={props.image} alt="" />
               <div className="image-overlay">
                 <span>View Live Demo</span>
+                <MDBIcon fas icon="external-link-alt" className="ms-2" />
               </div>
             </div>
           </a>
-          <div className="overview mt-4">
-            <a href={props.live} target="_blank" rel="noreferrer">
-              <h1>{props.title}</h1>
+          <div className="overview">
+            <a href={props.live || props.code} target="_blank" rel="noreferrer">
+              <h1 className="project-title">{props.title}</h1>
             </a>
+
             <div className="project-links">
-              <a href={props.live} target="_blank" rel="noreferrer">
-                <MDBIcon
-                  fas
-                  icon="external-link-alt"
-                  size="2x"
-                  className="me-3"
-                />
-              </a>
+              {props.live && (
+                <a
+                  href={props.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-link"
+                >
+                  <MDBIcon fas icon="external-link-alt" size="lg" />
+                </a>
+              )}
               {props.code && (
-                <a href={props.code} target="_blank" rel="noreferrer">
-                  <MDBIcon fab icon="github" size="2x" />
+                <a
+                  href={props.code}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-link"
+                >
+                  <MDBIcon fab icon="github" size="xl" />
                 </a>
               )}
             </div>
           </div>
-          <h4 className="text-start my-3">Technology Used</h4>
-          <div className="skills my-3">
-            {props.skills !== undefined &&
-              props.skills.map((element, index) => {
-                return (
-                  <button className="animatedBtn btn me-2 mb-4" key={index}>
+          <div className="tech-section">
+            <h4 className="tech-title">Technology Stack</h4>
+            <div className="skills">
+              {props.skills !== undefined &&
+                props.skills.map((element, index) => (
+                  <button className="tech-badge btn" key={index}>
                     {element}
                   </button>
-                );
-              })}
+                ))}
+            </div>
           </div>
         </div>
         <div className="project project-back">
-          <div className="description">{props.desc}</div>
+          <div className="description">
+            <h3 className="mb-3">Project Overview</h3>
+            {props.desc}
+          </div>
         </div>
       </div>
-      <div
-        className="flip-button"
-        onClick={(element) => {
-          flip(element);
-        }}
-      >
-        <MDBIcon fas icon="info" size="2x" />
+      <div className="flip-button" onClick={flip}>
+        <MDBIcon fas icon="info-circle" size="2x" />
       </div>
     </div>
   );

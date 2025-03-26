@@ -40,6 +40,11 @@
     padding: 20px;
 }
 
+.experience > div:hover{
+    background-color: #cf20ff15;
+    border: 2px solid #cf20ff29;
+}
+
 .experience > div span{
     font-size: 30px;
     font-weight: 500;

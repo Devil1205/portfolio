@@ -105,7 +105,7 @@ function Projects() {
         desc: "Newsify is a news application that provides top news headlines of 50+ countries including every category like entertainment, sports, finance etc. It quick and attractive interface makes it very comfortable to use.",
         image: newsify,
         skills: ["ReactJs", "Javascript", "Bootstrap"],
-        live: "https://github.com/Devil1205/Newsify",
+        live: "",
         code: "https://github.com/Devil1205/Newsify",
         type: "Personal",
       },
@@ -163,9 +163,9 @@ function Projects() {
         My <span className="purple">Projects</span>
       </h1>
 
-      <div className="category-buttons text-center mb-4">
+      <div className="category-buttons text-center">
         <button
-          className={`btn btn-lg mx-2 ${
+          className={`btn btn-md m-2 ${
             activeCategory === "all" ? "btn-primary" : "btn-outline-primary"
           }`}
           onClick={() => setActiveCategory("all")}
@@ -173,7 +173,7 @@ function Projects() {
           All Projects
         </button>
         <button
-          className={`btn btn-lg mx-2 ${
+          className={`btn btn-md m-2 ${
             activeCategory === "Professional"
               ? "btn-primary"
               : "btn-outline-primary"
@@ -183,7 +183,7 @@ function Projects() {
           Professional
         </button>
         <button
-          className={`btn btn-lg mx-2 ${
+          className={`btn btn-md m-2 ${
             activeCategory === "Personal"
               ? "btn-primary"
               : "btn-outline-primary"
@@ -194,7 +194,7 @@ function Projects() {
         </button>
       </div>
 
-      <div className="row gy-4" style={{ margin: "10px 0px" }}>
+      <div className="row gy-4 m-0">
         {activeCategory === "all" ? (
           <>
             {projects.Professional.map((project, index) => (

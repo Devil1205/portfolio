@@ -14,14 +14,16 @@ function Home({ scrollToElement }) {
             Hi, I am <span className="purple mx-2">Pulkit</span>
           </div>
           <div>
-            and I am a{" "}
+            I am a{" "}
             <span className="purple mx-2">
               <Typewriter
                 options={{
                   strings: [
-                    "Programmar",
-                    "MERN Developer",
-                    "Frontend Developer",
+                    "Full-Stack Developer",
+                    "Programmer",
+                    "MERN/PERN Expert",
+                    "Problem Solver",
+                    "Tech Enthusiast",
                   ],
                   autoStart: true,
                   loop: true,
@@ -33,13 +35,13 @@ function Home({ scrollToElement }) {
             </span>
           </div>
           <div className="objective">
-          <span className="purple">❝</span> I'm a passionate Full Stack Developer specializing in the MERN
-            stack and PostgreSQL. I build scalable, high-performance web
-            applications with clean, efficient code. With experience in
-            React.js, Node.js, and RESTful APIs, I strive to create seamless
-            digital experiences. Currently working as a Software Engineer, I
-            love solving complex problems and bringing ideas to life through
-            technology. <span className="purple">❞</span>
+            <span className="purple">❝</span> I'm a passionate Full Stack
+            Developer specializing in the MERN stack and PostgreSQL. I build
+            scalable, high-performance web applications with clean, efficient
+            code. With experience in React.js, Node.js, and RESTful APIs, I
+            strive to create seamless digital experiences. Currently working as
+            a Software Engineer, I love solving complex problems and bringing
+            ideas to life through technology. <span className="purple">❞</span>
           </div>
           <div className="cv">
             <Link
