@@ -107,6 +107,7 @@
 @media screen and (max-width: 450px ) {
     .contact-info {
         width: 90%;
+        padding: 1.5rem 0.5rem;
     }
     .contact-info>div {
       flex-direction: column;
