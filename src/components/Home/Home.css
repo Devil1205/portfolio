@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 10px 50px; */
     font-size: 2rem;
     white-space: nowrap;
 }
@@ -22,6 +21,7 @@
     border-radius: 60px;
     transform: rotate(10deg);
     transition: 0.5s all;
+    object-position: 0 0;
 }
 
 .imageSet {
@@ -52,7 +52,6 @@
 }
 
 .social-media {
-    /* background: linear-gradient(150deg, #ffa9a9, #5e4d4d); */
     border-radius: 20px;
     font-size: 15px;
     padding: 5px;
@@ -94,6 +93,6 @@
     }
 
     .myHomeBanner>div {
-        width: 70%;
+        width: 80%;
     }
 }
