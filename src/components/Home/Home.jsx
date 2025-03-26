@@ -45,7 +45,7 @@ function Home({ scrollToElement }) {
           </div>
           <div className="cv">
             <Link
-              to="https://drive.google.com/file/d/1Ie1T96gZHWhF62klpzj9Ow0rtPVTpLLG/view?usp=sharing"
+              to="https://drive.google.com/file/d/1zQaCjQiZImus2meRRWj9eblXuDtYUZ_l/view?usp=sharing"
               download={"Pulkit_Resume"}
               target="_blank"
             >
