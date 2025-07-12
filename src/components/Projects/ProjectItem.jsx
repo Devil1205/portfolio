@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { MDBIcon } from "mdb-react-ui-kit";
+import PropTypes from "prop-types";
 
 function ProjectItem(props) {
   const flip = (element) => {
@@ -77,5 +78,15 @@ function ProjectItem(props) {
     </div>
   );
 }
+
+ProjectItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  live: PropTypes.string.isRequired,
+  code: PropTypes.string.isRequired,
+  skills: PropTypes.array.isRequired,
+};
 
 export default ProjectItem;

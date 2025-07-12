@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Skills from "./components/Skills/Skills"
 import Contact from "./components/Contact/Contact"
+import React from "react";
 
 function App() {
 

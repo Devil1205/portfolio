@@ -4,10 +4,12 @@ import "./Home.css";
 import Typewriter from "typewriter-effect";
 import { MDBIcon } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Home({ scrollToElement }) {
   return (
     <div className="myHome">
+      {/* eslint-disable react/no-unescaped-entities */}
       <div className="myHomeBanner">
         <div>
           <div>
@@ -82,5 +84,9 @@ function Home({ scrollToElement }) {
     </div>
   );
 }
+
+Home.propTypes = {
+  scrollToElement: PropTypes.func.isRequired, // or PropTypes.any / PropTypes.element etc.
+};
 
 export default Home;
