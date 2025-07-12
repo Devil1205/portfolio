@@ -5,6 +5,7 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import FolderSpecialOutlinedIcon from '@mui/icons-material/FolderSpecialOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import PropTypes from 'prop-types';
 
 function Navbar({scrollToElement}) {
   return (
@@ -17,5 +18,9 @@ function Navbar({scrollToElement}) {
     </div>
   )
 }
+
+Navbar.propTypes = {
+  scrollToElement: PropTypes.func.isRequired, // or PropTypes.any / PropTypes.element etc.
+};
 
 export default Navbar
