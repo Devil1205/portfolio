@@ -1,8 +1,12 @@
 import React from "react";
 import "./About.css";
 import { MDBIcon } from "mdb-react-ui-kit";
+import moment from "moment";
 
 function About() {
+  const joiningDate = moment("2024-06-01");
+  const currentDate = moment();
+  const experience = currentDate.diff(joiningDate, "years", true).toFixed(1);
   return (
     <div className="myAbout">
       <h1 className="text-center">
@@ -20,7 +24,7 @@ function About() {
             />
             <span>Experience Level</span>
             <span className="text-secondary text-center">
-              9+ Months of Experience <br /> as Full Stack Developer
+              Over {experience}+ Years of Experience <br /> as Full Stack Developer
             </span>
           </div>
           <div>
@@ -33,7 +37,7 @@ function About() {
             />
             <span>Projects</span>
             <span className="text-secondary">
-              4 - Professional Projects <br />9 - Personal Projects
+              6 - Professional Projects <br />9 - Personal Projects
             </span>
           </div>
         </div>

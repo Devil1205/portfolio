@@ -19,7 +19,7 @@
     max-height: 400px;
     object-fit: cover;
     border-radius: 60px;
-    transform: rotate(10deg);
+    transform: rotate(5deg);
     transition: 0.5s all;
     object-position: 0 0;
 }

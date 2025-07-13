@@ -12,6 +12,8 @@ import myStore from "../../images/myStore.png";
 import nnPortfolio from "../../images/NNPortfolio.png";
 import neurotalRecruit from "../../images/neurotalRecruit.png";
 import kluvor from "../../images/kluvor.png";
+import hindware from "../../images/hindware.svg";
+import storeflow from "../../images/storeflow.svg";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
@@ -19,6 +21,36 @@ function Projects() {
 
   const projects = {
     Professional: [
+      {
+        title: "Hindware",
+        desc: "An e-commerce website for Hindware Ltd. to list their wide range of products along with an admin panel for required actions.",
+        image: hindware,
+        skills: [
+          "NodeJs",
+          "ExpressJs",
+          "Next.js",
+          "ReactJs",
+          "PostgreSQL",
+          "AWS"
+        ],
+        live: "https://website1.hindware.com",
+        code: "",
+        type: "Professional",
+      },
+      {
+        title: "Storeflow (Starbucks)",
+        desc: "Storeflow comprises of a mobile app and a website that manages the different actions required to open and maintain the stores of a company like store creation, visits planning etc. ",
+        image: storeflow,
+        skills: [
+          "NodeJs",
+          "ExpressJs",
+          "ReactJs",
+          "MongoDB",
+        ],
+        live: "http://64.227.135.221:3000",
+        code: "",
+        type: "Professional",
+      },
       {
         title: "Neurotal Recruit",
         desc: "Neurotal Recruit is a platform that helps companies to find the best candidates for their open positions by providing a comprehensive job portal and candidate management system.",
@@ -95,7 +127,7 @@ function Projects() {
         title: "Quotify",
         desc: "Quotify is a random quote generator that provides a random quote to the users. It also offers user to create and login their account to write, update or delete their own quotes.",
         image: quotify,
-        skills: ["NodeJs", "ExpressJs", "ReactJs", "MongoDB"],
+        skills: ["NodeJs", "ExpressJs", "ReactJs", "MongoDB", "OAuth 2.0", "Docker"],
         live: "https://quotify1234.netlify.app/",
         code: "https://github.com/Devil1205/quotify",
         type: "Personal",
