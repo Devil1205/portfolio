@@ -19,6 +19,7 @@ function Skills() {
               <button className="animatedBtn-light btn">ReactJS</button>
               <button className="animatedBtn-light btn">TailwindCSS</button>
               <button className="animatedBtn-light btn">Redux</button>
+              <button className="animatedBtn-light btn">Typescript</button>
               <button className="animatedBtn-light btn">JavaScript</button>
               <button className="animatedBtn-light btn">CSS3</button>
               <button className="animatedBtn-light btn">HTML5</button>
@@ -46,8 +47,10 @@ function Skills() {
             </h2>
             <div className="skills">
               <button className="animatedBtn-light btn">Git</button>
+              <button className="animatedBtn-light btn">AWS</button>
+              <button className="animatedBtn-light btn">OAuth 2.0</button>
+              <button className="animatedBtn-light btn">Docker</button>
               <button className="animatedBtn-light btn">Postman</button>
-              <button className="animatedBtn-light btn">npm</button>
               <button className="animatedBtn-light btn">Stripe</button>
               <button className="animatedBtn-light btn">Swagger</button>
               <button className="animatedBtn-light btn">react-i18next</button>
@@ -61,10 +64,10 @@ function Skills() {
             </h2>
             <div className="skills">
               <button className="animatedBtn-light btn">Problem Solving</button>
-              <button className="animatedBtn-light btn">Communication</button>
-              <button className="animatedBtn-light btn">Team Leadership</button>
+              <button className="animatedBtn-light btn">Attention to Detail</button>
+              <button className="animatedBtn-light btn">Teamwork</button>
               <button className="animatedBtn-light btn">Time Management</button>
-              <button className="animatedBtn-light btn">Agile/Scrum</button>
+              <button className="animatedBtn-light btn">Adaptability</button>
             </div>
           </div>
         </div>

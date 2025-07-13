@@ -1,5 +1,5 @@
 import React from "react";
-import keepNotes from "../../images/banner.jpg";
+import keepNotes from "../../images/banner3.png";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import { MDBIcon } from "mdb-react-ui-kit";
